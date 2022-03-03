@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RomanNumbers
 {
-    class RomanNumberException : Exception
+    public class RomanNumberException : Exception
     {
         public RomanNumberException() { }
         public RomanNumberException(string message) : base(message) { }

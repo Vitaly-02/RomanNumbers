@@ -21,7 +21,7 @@ namespace RomanNumbers
             {
                 RomanNumber e = new(16);
                 RomanNumber f = new(140);
-                RomanNumber.Sub(e, f);
+                e -= f;
             }
             catch (RomanNumberException exp)
             {
@@ -38,16 +38,16 @@ namespace RomanNumbers
                 RomanNumber result;
                 RomanNumber[] mas = { a, b, c, d };
 
-                result = RomanNumber.Add(a, b);
+                result = a + b;
                 Console.WriteLine($"{a} + {b} = {result}");
 
-                result = RomanNumber.Div(c, d);
+                result = c / d;
                 Console.WriteLine($"{c} / {d} = {result}");
 
-                result = RomanNumber.Sub(b, a);
+                result = b - a;
                 Console.WriteLine($"{b} - {a} = {result}");
 
-                result = RomanNumber.Mul(c, d);
+                result = c * d;
                 Console.WriteLine($"{c} * {d} = {result}");
 
                 // тестируем сортировку
